@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+### Fullstack Web Application for Link Shortening
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The frontend (/frontend) is written in React.js, while the backend (/backend) is implemented in Express.js.
 
-## Available Scripts
+### Quick Start
 
-In the project directory, you can run:
+To get started, simply execute the following commands:
+```npm run install```
+and
+```npm run start```
 
-### `npm start`
+The URL shortening app will then be accessible at [localhost:3001](http://localhost:3001/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+As this is a fullstack app with two separate frontend and backend applications, I've included a few package scripts to simplify management. First, run:
+```npm run install```
+This command will install all dependencies for both applications.
 
-### `npm test`
+### 2. Development Phase
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+During development, we need to serve two separate apps. Start the frontend development server by running:
+```npm run start:frontend```
+and then start the backend server with:
+```npm run start:backend```
 
-### `npm run build`
+Default development links are as follows:
+Frontend: [localhost:3000](http://localhost:3000/)
+Backend: [localhost:3001](http://localhost:3001/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For deployment, simply execute:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```npm run start```
+This will start the Express server with the built frontend from '/frontend/build/index.html'.
